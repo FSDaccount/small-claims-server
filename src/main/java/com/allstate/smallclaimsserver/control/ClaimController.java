@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@RequestMapping("/api/payment")
+@RequestMapping("/api/claim")
 public class ClaimController {
 
     @Autowired
