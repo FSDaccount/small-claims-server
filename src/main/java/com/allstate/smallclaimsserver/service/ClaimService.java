@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface ClaimService {
 
+    void saveClaim(Claim claim);
+
     public List<Claim> getAllClaims();
     public Claim getById(Integer id) throws ClaimNotFoundException;
 

@@ -17,6 +17,8 @@ public class ClaimServiceImpl implements ClaimService {
     private ClaimRepository claimRepository;
 
     @Override
+    public void saveClaim(Claim claim) { claimRepository.save(claim);}
+    @Override
     public List<Claim> getAllClaims() {
         List<Claim> claims =claimRepository.findAll();
         System.out.println("There were " + claims.size() + " found");
